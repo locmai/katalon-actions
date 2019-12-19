@@ -1,0 +1,20 @@
+name: 'Katalon Action'
+description: 'Run Katalon Test Suites'
+inputs:
+  api-key:
+    description: 'Katalon API Key (Note that from 7.0.0 and above, this API key is required)'
+    required: false
+  api-key:
+    description: 'Katalon API Key (Note that from 7.0.0 and above, this API key is required)'
+    required: false
+  command-line:
+    description: 'Katalon API Key (Note that from 7.0.0 and above, this API key is required)'
+    required: false
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - "${{ inputs.command-line }} -apiKey=${{ inputs.api-key }}"
