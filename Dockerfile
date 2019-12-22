@@ -1,4 +1,4 @@
-FROM katalonstudio/katalon:7.1.2
+FROM katalonstudio/katalon:7.2.1
 
 COPY entrypoint.sh /entrypoint.sh
 
