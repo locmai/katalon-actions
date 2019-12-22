@@ -1,14 +1,5 @@
 name: 'Katalon Action'
 description: 'Run Katalon Test Suites'
-inputs:
-  api-key:
-    description: 'Katalon API Key (Note that from 7.0.0 and above, this API key is required)'
-    required: true
-  command-line-args:
-    description: 'All arguments to parse into Katalon Runtime'
-    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - "${{ inputs.command-line-args }} -apiKey=${{ inputs.api-key }}"

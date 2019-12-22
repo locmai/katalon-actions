@@ -1,4 +1,3 @@
 #!/bin/sh -l
 
-echo "$@"
-/katalon/scripts/katalonc.sh "$@"
+/katalon/scripts/katalonc.sh $KATALON_ARGS
