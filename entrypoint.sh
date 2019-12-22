@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-sh /katalon/katalon/katalon-execute.sh $1 $2
+sh /katalon/katalon/scripts/katalon-execute.sh $1 $2
