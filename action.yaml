@@ -1,5 +1,15 @@
 name: 'Katalon Action'
 description: 'Run Katalon Test Suites'
+inputs:
+  api-key:
+    description: 'API key for activating KRE'
+    required: true
+  command:
+    description: 'Katalon required parameters'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.api-key }}
+    - ${{ inputs.command}}
