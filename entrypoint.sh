@@ -1,3 +1,2 @@
 #!/bin/sh -l
-
-/katalon/scripts/katalonc.sh $2 -apiKey=$1
+echo "$2 -apiKey=$1" | /katalon/scripts/katalonc.sh 
